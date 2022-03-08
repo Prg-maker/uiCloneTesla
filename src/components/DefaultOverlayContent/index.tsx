@@ -1,3 +1,5 @@
+import React from 'react'
+
 import {Container, Heading , Buttons} from './styles'
 
 interface Props {
@@ -6,7 +8,7 @@ interface Props {
 
 }
 
-export function DefaultOverlayContent({description , label}:Props){
+const DefaultOverlayContent: React.FC<Props> =  ({description , label})=> {
   return(
     <Container>
       <Heading>
@@ -17,8 +19,9 @@ export function DefaultOverlayContent({description , label}:Props){
       <Buttons>
         <button>Custom Order</button>
         <button className="white">Existing Inventory</button>
-
       </Buttons>
     </Container>
   )
 }
+
+export default DefaultOverlayContent

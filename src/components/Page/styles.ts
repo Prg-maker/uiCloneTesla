@@ -4,25 +4,25 @@ import styled from "styled-components";
 export const Container = styled.div`
 
 .colored:nth-child(1) {
-background: #f1ffe7;
+background: #9FFFCB;
 }
 .colored:nth-child(2) {
-background: #dfffd9;
+background: #7AE582;
 }
 .colored:nth-child(3) {
-background: #cdfeca;
+background: #25A18E;
 }
 .colored:nth-child(4) {
-background: #bbfebb;
+background: #00A5CF;
 }
 .colored:nth-child(5) {
-background: #a9fdac;
+background: #004E64;
 }
 .colored:nth-child(6) {
-background: #90f29c;
+background: #5C6D70;
 }
 .colored:nth-child(7) {
-background: #77e68c;
+background: #484A47;
 }
 `
 

@@ -1,8 +1,12 @@
+import React from 'react'
+
 import {Container} from './styles'
-import {DefaultOverlayContent} from '../DefaultOverlayContent'
+import DefaultOverlayContent from '../DefaultOverlayContent'
 import { ModelsSection, ModelsWrapper } from '../Model'
 
-export function Page(){
+
+
+const Page: React.FC = () => {
   return(
     <Container>
       <ModelsWrapper>
@@ -18,20 +22,24 @@ export function Page(){
 
             ].map(modelName =>{
               return(
+                <>
 
-                <ModelsSection
-                key={modelName}
-                className="colored"
-                modelName= {modelName}
-                overlayNode = {
-                <DefaultOverlayContent
-                  label={modelName}
-                  description='Order Online for Delivery'
+                  <ModelsSection
+
+                  key={Math.random()}
+                  className="colored"
+                  modelName= {modelName}
+                  overlayNode={
+                    <DefaultOverlayContent
+                      label={modelName}
+                      description="Order Online for Delivery"
+                    />
+                  }
                 />
-  
-                }
-              />
-                
+
+           
+                </>
+
               )
 
             })}
@@ -41,3 +49,5 @@ export function Page(){
     </Container>
   )
 }
+
+export default Page
