@@ -26,5 +26,8 @@ background: #484A47;
 }
 `
 
+export const Spacer = styled.div`
 
-
+  height:15vh ;
+  background: #484A47;
+`
